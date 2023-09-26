@@ -1,0 +1,213 @@
+.advantages__section {
+    background-color:  #84A178;
+    padding-top: 66px;
+    padding-bottom: 60px;
+  
+
+    @include mobile{
+        width:100%;
+    }
+    @include tablet {
+        padding-top: 82px;
+        padding-bottom: 204px;
+    }
+    @include desktop {
+        padding-top: 90px;
+        padding-bottom: 180px;
+}
+}
+
+.advantages__list {
+    display:flex;
+    flex-direction: column;
+    gap: 94px;
+    @include tablet {
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+        width: 100%;
+    }
+    @include desktop {
+        gap: 32px;
+        width: 100%;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.advantages__item {
+    display:flex;
+    flex-direction: column;
+    padding-left: 45px;
+    padding-right: 45px;  
+}
+
+.advantages__quantity {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    margin-bottom: 18px;
+
+    -webkit-animation: heartbeat 3s ease-in-out 0.5s infinite both;
+    animation: heartbeat 3s ease-in-out 0.5s infinite both;
+
+    @include tablet {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1.2;
+        margin-bottom: 16px;   
+    }
+    @include desktop {
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 1.2;
+        margin-bottom: 16px;   
+    }
+}
+
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }   
+
+.advantages__text {
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    color: #FCFCFC;
+    @include tablet {
+        font-weight: 400;
+        font-size: 14px; 
+    }
+}
+
+.cow {
+    position: relative;
+}
+.cow::before {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    top: -65px; 
+    left: 50%;
+    transform: translate(-50%); 
+   
+    top: -65px; 
+    left: 50%;
+    transform: translate(-50%); 
+    content: "";
+    background: url('../images/advantages/cow.png');
+    background-size: cover;
+    @include retina {
+        background-image: url('../images/advantages/cow-2x.png');         
+    }
+}
+
+.weight{
+    position: relative;
+}
+
+.weight::before{
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    top: -65px; 
+    left: 50%;
+    transform: translate(-50%);
+    content:"";
+    background: url('../images/advantages/weight.png');
+    background-size: cover;
+    @include retina {
+        background-image: url('../images/advantages/weight-2x.png');  
+    }
+}
+
+.ice {
+    position: relative;
+}
+
+.ice::before {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    top: -65px; 
+    left: 50%;
+    transform: translate(-50%);
+    content:"";
+    background: url('../images/advantages/ice.png');
+    background-size: cover;
+    @include retina {
+        background-image: url('../images/advantages/ice-2x.png');
+    }
+}
